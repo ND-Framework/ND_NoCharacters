@@ -9,7 +9,7 @@ RegisterNetEvent("ND_NoCharacters:GetCharacter", function()
             return
         end
     end
-    NDCore.Functions.CreateCharacter(player, GetPlayerName(player), "", "", "", GetPlayerName(player), "")
+    NDCore.Functions.CreateCharacter(player, GetPlayerName(player), "", "", "")
     characters = NDCore.Functions.GetPlayerCharacters(player)
     for id, characterData in pairs(characters) do
         NDCore.Functions.SetActiveCharacter(player, id)
